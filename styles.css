@@ -1,0 +1,131 @@
+/* === RESET === */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: linear-gradient(120deg, #eef2f7, #f9fbff);
+  color: #1f2933;
+  min-height: 100vh;
+}
+
+/* === HEADER / HERO === */
+header {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+}
+
+header h1 {
+  font-size: 2.3rem;
+  margin: 0;
+}
+
+/* === NAVIGATION === */
+nav {
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #1e293b;
+  font-weight: 600;
+  transition: all 0.25s;
+}
+
+nav a:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* === MAIN CONTENT === */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* === SECTIONS AS CARDS === */
+section {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.25s;
+}
+
+section:hover {
+  transform: translateY(-6px);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #2563eb;
+}
+
+/* === PROFILE PHOTO === */
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  margin: 15px auto;
+}
+
+/* === LISTS === */
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+li a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+/* === FOOTER === */
+footer {
+  margin-top: 60px;
+  padding: 30px 20px;
+  text-align: center;
+  background: #f1f5f9;
+  color: #475569;
+}
+
+footer a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

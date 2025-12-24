@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма реєстрації</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Навігація -->
+  <nav class="top-nav">
+    <a href="../labsHP.html">⬅ До лабораторних</a>
+  </nav>
+
+  <main class="container">
+    <!-- Інформаційний блок -->
+    <aside class="info">
+      <h2>Реєстрація користувача</h2>
+      <p>
+        Заповніть форму для демонстрації роботи HTML-форм.
+        Дані буде надіслано на тестовий сервер через <strong>POST</strong>-запит.
+      </p>
+      <p class="note">
+        * Усі обовʼязкові поля позначені автоматично браузером
+      </p>
+    </aside>
+
+    <!-- Форма -->
+    <section class="form-card">
+      <h1>Форма реєстрації</h1>
+
+      <form action="https://webhook.site/8ba1b669-5f60-4e21-9719-32a25e6d6d6a" method="post">
+
+        <div class="field">
+          <label for="firstName">Імʼя</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+
+        <div class="field">
+          <label for="lastName">Прізвище</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Електронна пошта</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="field">
+          <label for="password">Пароль</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="field">
+          <label for="confirmPassword">Підтвердження паролю</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+
+        <div class="field">
+          <label for="birthdate">Дата народження</label>
+          <input type="date" id="birthdate" name="birthdate">
+        </div>
+
+        <div class="field">
+          <label for="gender">Стать</label>
+          <select id="gender" name="gender">
+            <option value="">Оберіть варіант</option>
+            <option value="male">Чоловіча</option>
+            <option value="female">Жіноча</option>
+            <option value="other">Інша</option>
+          </select>
+        </div>
+
+        <button type="submit">Надіслати дані</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
